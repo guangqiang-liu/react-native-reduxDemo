@@ -7,4 +7,4 @@ const Constants = {
   DECREASE: 'DECREASE'
 }
 
-export default Constants
+export {Constants}

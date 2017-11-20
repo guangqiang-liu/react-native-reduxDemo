@@ -4,7 +4,8 @@
 import React, {Component} from 'react'
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native'
 import {connect} from 'react-redux'
-import Type from './constants'
+import {Constants} from './constants'
+import {Action} from './action'
 
 class CounterApp extends Component {
 
@@ -39,10 +40,10 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     add: () => {
-      return dispatch({type: Type.INCREASE})
+      return dispatch(Action.increase())
     },
     reduce: () => {
-      return dispatch({type: Type.DECREASE})
+      return dispatch(Action.decrease())
     }
   }
 }

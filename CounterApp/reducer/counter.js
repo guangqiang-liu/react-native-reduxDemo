@@ -1,9 +1,11 @@
 /**
  * Created by guangqiang on 2017/11/19.
  */
-import Constants from '../constants'
+import {Constants} from '../constants'
 
-const counter = (state = 10, action) => {
+const defaultState = 10
+
+const reducer = (state = defaultState, action) => {
   switch (action.type) {
     case Constants.INCREASE:
       return state + 1
@@ -14,4 +16,4 @@ const counter = (state = 10, action) => {
   }
 }
 
-export default counter
+export default reducer
