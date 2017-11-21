@@ -4,7 +4,11 @@
 
 const Constants = {
   INCREASE: 'INCREASE',
-  DECREASE: 'DECREASE'
+  DECREASE: 'DECREASE',
+
+  ADDITEM: 'ADDITEM',
+  DELETEITEM: 'DELETEITEM',
+  CHECKITEM: 'CHECKITEM'
 }
 
 export {Constants}
